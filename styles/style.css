@@ -121,47 +121,79 @@
 } */
 /* ICON -End--------------------------------------------------------------------------------------- */
 
-
 .timeline {
-    border-left: 1px solid hsl(0, 0%, 90%);
-    position: relative;
-    list-style: none;
-  }
-  
-  .timeline .timeline-item {
-    position: relative;
-  }
-  
-  .timeline .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
-  }
-  
-  .timeline .timeline-item:after {
-    background-color: hsl(0, 0%, 90%);
-    left: -38px;
-    border-radius: 50%;
-    height: 11px;
-    width: 11px;
-    content: "";
-  }
-
-
-  /*  */
-
-
-  .floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
 }
- 
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+
+/*  */
+
+.floating {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.speech-bubble {
+  width: 170px;
+  padding: 10px 0 10px 0;
+  background: #E8E9EB;
+  color: #333;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  min-width: 7em;
+  margin-bottom: 16px;
+
+  opacity: 1;
+  transition: 1s opacity;
+}
+.speech-bubble:after {
+  border: 16px solid transparent;
+  border-top-color: #E8E9EB;
+  content: "";
+  margin-left: -10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+.speech-bubble.rounded {
+  border-radius: 0.4em;
 }
