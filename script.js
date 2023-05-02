@@ -1,8 +1,27 @@
 let speechArray = [
-  "Welcome to be here!",
-  "How are you!",
-  "I love programming",
-  "I love cooking too",
+  "Welcome to my software engineering portfolio.",
+
+  "I specialize in building efficient, scalable apps.",
+
+  "Solving complex problems with elegant code solutions.",
+
+  "My focus is on creating user-centric software.",
+
+  "I develop innovative solutions for modern problems.",
+
+  "Crafting code that is both functional and beautiful.",
+
+  "I'm passionate about building scalable applications.",
+
+  "My expertise covers both frontend and backend.",
+
+  "I love pushing the boundaries of what's possible.",
+
+  "Every project is built with precision.",
+
+  "My goal is to deliver exceptional results.",
+
+  "Hope you enjoy exploring my portfolio.",
 ];
 document.getElementById("text_value").innerHTML = "Hi there!";
 
