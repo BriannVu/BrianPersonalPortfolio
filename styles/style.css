@@ -205,7 +205,11 @@
 }
 
 @media (min-width: 768px) {
-    #profile_pic {
-      height: 300px;
-    }
+  #profile_pic {
+    height: 300px;
   }
+}
+
+.project_link:hover {
+    border-bottom: 1px solid #0d6efd;
+}
