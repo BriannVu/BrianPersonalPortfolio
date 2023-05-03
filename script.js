@@ -27,7 +27,7 @@ document.getElementById("text_value").innerHTML = "Hi there!";
 
 window.onload = function () {
   for (let i = 0; i < speechArray.length; i++) {
-    window.setTimeout(updateText, 3000 + i * 4000);
+    window.setTimeout(updateText, 500 + i * 3000);
     function updateText() {
       document.getElementById("text_value").style.opacity = "0";
       window.setTimeout(() => {
