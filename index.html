@@ -36,6 +36,9 @@
       .h001 {
         font-family: "Trirong", serif;
       }
+      .bigFontSize {
+        font-size: 40px;
+      }
       .fadeFontColor {
         color: #758398;
       }
@@ -52,6 +55,7 @@
     </style>
   </head>
   <body>
+    <div id="backdrop"></div>
     <div class="container">
       <div class="row" style="height: 9vh">
         <div class="col-12 mb-5">
@@ -80,9 +84,10 @@
                   <a class="nav-link me-md-3" href="#aboutme_heading"
                     >About me</a
                   >
-                  <a class="nav-link me-md-3" href="#skills_heading"
-                    >Skill & Experience</a
+                  <a class="nav-link me-md-3" href="#certificate_skills_heading"
+                    >Certificates & Skill</a
                   >
+                  <a class="nav-link" href="#experience_heading">Experience</a>
                   <a class="nav-link" href="#portfolio_heading">Portfolio</a>
                 </div>
               </div>
@@ -121,7 +126,7 @@
                 style="width: fit-content"
               >
                 <div class="h001 display-1 mt-5">Brian Vu</div>
-                <div class="display-6 ms-1">Software Engineer</div>
+                <div class="display-6 ms-1">Software Developer</div>
                 <div class="ms-2 mt-2">
                   <img src="styles/mail.png" alt="mail_icon" width="20px" />
                   vubaonam0401@gmail.com <br />
@@ -166,9 +171,9 @@
       <div class="row" style="height: 25vh"></div>
       <br />
       <div class="row">
-        <div class="col-12 h1 h001" id="aboutme_heading">|About me</div>
+        <div  data-aos="fade-right" class="col-12 h1 h001 bigFontSize" id="aboutme_heading">|About me</div>
         <br /><br />
-        <div class="col-12 col-md-6 pt-4 pb-4" data-aos="zoom-in">
+        <div class="col-12 col-md-6 pt-4 pb-4">
           <div class="row">
             <div class="col-1 col-md-3"></div>
             <div class="col-10 col-md-7">
@@ -185,107 +190,154 @@
             <div class="col-1 col-md-2"></div>
           </div>
         </div>
-        <div class="col-12 col-md-6 pt-4" data-aos="fade-up">
+        <div class="col-12 col-md-6">
           <div class="h001 h5">
-            I am a skilled software engineer who graduated from Sheridan
-            College's System Analyst program, and I am passionate about
-            leveraging my skills to make a positive impact in the world.
+            <p class="mb-3">Skilled software engineer passionate about making a positive impact.</p>
           </div>
-          <div class="fadeFontColor ms-3">
-            Ever since a young age, coding has been my passion, and I have
-            pursued it with dedication and enthusiasm throughout my academic
-            career, achieving a final GPA of 3.85/4. I have taken on challenging
-            projects, mastered complex programming languages, and gained
-            valuable experience that has enabled me to make a significant
-            difference in my previous roles, improving productivity and
-            efficiency for the organizations I worked with.
+          <div class="fadeFontColor">
+            <p class="mb-3">With a strong background in system analysis and a final GPA of 3.85/4, I bring dedication and enthusiasm to every coding project. I've tackled complex programming languages and leveraged my experience to improve productivity and efficiency in previous roles.</p>
           </div>
           <div class="mt-2">
-            If you would like to see my experience or some of the projects I
-            have worked on, I invite you to explore my portfolio. Please feel
-            free to reach out to me if you have any questions or if you would
-            like to learn more about my skills and expertise.
+            <p>If you want to see my experience or explore my portfolio of projects, feel free to reach out. I'm here to answer any questions and share more about my skills and expertise.</p>
           </div>
         </div>
-      </div>
-      <br /><br />
-      <div class="row">
-        <div class="col-12 col-md-6 mt-5">
-          <div class="h1 h001" id="skills_heading">|Skills</div>
-          <div data-aos="fade-right">
-            <span class="h001">Programming languages</span><br /><br />
-            <div class="mb-2" id="skills_body">
-              <div class="row">
-                <i class="devicon-java-plain-wordmark colored skills col-2"></i>
-                <i
-                  class="devicon-html5-plain-wordmark colored skills col-2"
-                ></i>
-                <i class="devicon-css3-plain-wordmark colored skills col-2"></i>
-                <i class="devicon-javascript-plain colored skills col-2"></i>
-                <i class="devicon-typescript-plain colored skills col-2"></i>
-                <i class="devicon-php-plain colored skills col-2"></i>
-                <i class="devicon-c-plain-wordmark colored skills col-2"></i>
-                <i class="devicon-csharp-plain colored skills col-2"></i>
-                <i
-                  class="devicon-kotlin-plain-wordmark colored skills col-2"
-                ></i>
-                <br /><br />
+
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 mb-5">
+            <div  data-aos="fade-right" class="col-12 h1 h001 bigFontSize" id="certificate_skills_heading">|Certificates</div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
               </div>
-              <div data-aos="fade-right">
-                <span class="h001">Frameworks and tools</span><br /><br />
-                <i
-                  class="devicon-spring-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-angularjs-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-react-original-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-jquery-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-nodejs-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-ionic-original-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-dot-net-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-androidstudio-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-mongodb-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-mysql-plain-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-microsoftsqlserver-plain-wordmark colored skills col-2"
-                ></i>
-                <i class="devicon-linux-plain colored skills col-2"></i>
-                <i class="devicon-git-plain-wordmark colored skills col-2"></i>
-                <i
-                  class="devicon-github-original-wordmark colored skills col-2"
-                ></i>
-                <i
-                  class="devicon-amazonwebservices-plain-wordmark colored skills col-2"
-                ></i>
+              <style>
+                .label1{
+                  background-color: rgba(0, 0, 0, 0.8);
+                  border-radius: 5px;
+                  color: white;
+                }
+              </style>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="styles/certificates/React.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="label1">
+                      <h5>React - The Complete Guide 2023</h5>
+                      <p>React, Hooks, Redux, React Router, Next.js</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="styles/certificates/CourseraBootstrap4.PNG" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="label1">
+                      <h5>Bootstrap 4</h5>
+                      <p>Grids and responsive design, Bootstrap CSS, Less and Sass.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div> -->
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <br />
+          <div class="col-12 col-md-6">
+            <div data-aos="fade-right" class="h1 h001 bigFontSize">|Skills</div>
+            <div>
+              <p><b>Programming languages:</b> Java, HTML, CSS, JavaScript, TypeScript, PHP, C, C#, Kotlin, SQL, Ruby.</p>
+              <p><b>Frameworks and tools:</b> Spring Boot, Angular, React, jQuery, Node.js, Ionic, .Net, Android Studio, Eclipse, MongoDB, MySQL, MS SQL, Oracle SQL, Linux, Git/GitHub, AWS, Hadoop.</p>
+              <!-- <span class="h001">Programming languages</span><br /><br />
+              <div class="mb-2" id="skills_body">
+                <div class="row">
+                  <i class="devicon-java-plain-wordmark colored skills col-2"></i>
+                  <i
+                    class="devicon-html5-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i class="devicon-css3-plain-wordmark colored skills col-2"></i>
+                  <i class="devicon-javascript-plain colored skills col-2"></i>
+                  <i class="devicon-typescript-plain colored skills col-2"></i>
+                  <i class="devicon-php-plain colored skills col-2"></i>
+                  <i class="devicon-c-plain-wordmark colored skills col-2"></i>
+                  <i class="devicon-csharp-plain colored skills col-2"></i>
+                  <i
+                    class="devicon-kotlin-plain-wordmark colored skills col-2"
+                  ></i>
+                  <br /><br />
+                </div>
+                <div>
+                  <span class="h001">Frameworks and tools</span><br /><br />
+                  <i
+                    class="devicon-spring-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-angularjs-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-react-original-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-jquery-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-nodejs-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-ionic-original-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-dot-net-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-androidstudio-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-mongodb-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-mysql-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-microsoftsqlserver-plain-wordmark colored skills col-2"
+                  ></i>
+                  <i class="devicon-linux-plain colored skills col-2"></i>
+                  <i class="devicon-git-plain-wordmark colored skills col-2"></i>
+                  <i
+                    class="devicon-github-original-wordmark colored skills col-2"
+                  ></i>
+                  <i
+                    class="devicon-amazonwebservices-plain-wordmark colored skills col-2"
+                  ></i>
+                </div>
+              </div> -->
+            </div>
+            <br />
+          </div>
         </div>
-        <div class="col-12 col-md-6 mt-5">
-          <div class="h1 h001">|My Experience</div>
+
+      <br /><br />
+      <div class="row mt-5">
+        
+        <div class="col-12 col-md-7 mt-2">
+          <div class="h1 h001 bigFontSize" data-aos="fade-right" id="experience_heading">|My Experience</div>
           <div>
             <!-- Section: Timeline -->
             <section class="py-4">
               <ul class="timeline">
-                <li class="timeline-item mb-5" data-aos="fade-up">
+                <li class="timeline-item mb-5">
                   <a
                     href="https://www.sheridancollege.ca/programs/computer-systems-technology-information-systems-engineering"
                     target="parent"
@@ -297,7 +349,7 @@
                       class="mb-4"
                     />
                   </a>
-                  <h5 class="fw-bold">Computer Systems Technology Student</h5>
+                  <h5 class="fw-bold">Computer Systems Technology - Advanced Diploma</h5>
                   <p class="text-muted mb-2 fw-bold">
                     Sheridan College <br />2020 Jan - 2022 Dec
                   </p>
@@ -380,7 +432,7 @@
       </div>
       <br />
       <div class="row">
-        <div class="col-12 h1 h001" id="portfolio_heading">|Portfolio</div>
+        <div class="col-12 h1 h001 bigFontSize" id="portfolio_heading" data-aos="fade-right">|Portfolio</div>
         <div class="col-12 col-md-6">
           <div class="projectBox m-3 p-3">
             <div class="display-6">Our Cultures App</div>
