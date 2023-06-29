@@ -10,12 +10,34 @@
   font-size: 150%;
 }
 
+#carousel-inner1{
+  height: 385px !important;
+}
+
+#certificate-col{
+  border-right: 2px solid #e6ecf8;
+}
+
+#background1{
+  padding: 90px 0 90px 0;
+}
+
 @media (max-width: 767.98px) {
   #greeting1 {
     font-size: 180%;
   }
   #greeting2 {
     font-size: 100%;
+  }
+  #carousel-inner1{
+    height: 240px !important;  
+  }
+  #certificate-col{
+    border-right: none;
+    border-bottom: 2px solid #e6ecf8;
+  }
+  #background1{
+    padding: 50px 0 50px 0;
   }
 }
 

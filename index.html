@@ -33,10 +33,10 @@
         font-family: "Trirong", serif;
       }
       .bigFontSize {
-        font-size: 40px;
+        font-size: 30px;
       }
       .fadeFontColor {
-        color: #a3a7a7;
+        color: #c5c5c5;
       }
       .skills {
         font-size: 60px;
@@ -81,9 +81,7 @@
                 id="navbarNavAltMarkup"
               >
                 <div class="navbar-nav">
-                  <a class="nav-link me-md-3 nav-item" href="#aboutme_heading"
-                    >About me</a
-                  >
+                  <a class="nav-link me-md-3 nav-item" href="#">Home</a>
                   <a
                     class="nav-link me-md-3 nav-item"
                     href="#certificate_skills_heading"
@@ -113,7 +111,9 @@
                 id="text_value"
                 class="speech-bubble rounded ps-2 pe-2"
                 style="width: 270px"
-              >Welcome to my software engineering portfolio</div>
+              >
+                Welcome to my website!
+              </div>
             </div>
             <img
               id="profile_pic"
@@ -176,7 +176,10 @@
       <div class="row" style="height: 6vh"></div>
       <br />
     </div>
-    <div style="background-color: #6e07f3; color: white; padding: 90px 0 90px 0;">
+    <div
+      id="background1"
+      style="background-color: #6e07f3; color: white;"
+    >
       <div class="container">
         <div class="row">
           <!-- <div
@@ -198,7 +201,7 @@
                   style="
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-                      border-radius: 34px;
+                    border-radius: 34px;
                   "
                 />
               </div>
@@ -207,25 +210,29 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="h001 h5">
-              <p class="mb-3">
-                <div style="-webkit-text-fill-color: transparent;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: white;
-                font-family: monospace;
-                font-weight: bolder;
-                "
-                id="greeting1">
-                  Hi, I'm Brian. <br>
+              <div class="mb-3">
+                <div
+                  style="
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: white;
+                    font-family: monospace;
+                    font-weight: bolder;
+                  "
+                  id="greeting1"
+                >
+                  Hi, I'm Brian. <br />
                   Nice to meet you.
                 </div>
-                <br>
-                <div id="greeting2" style="
-                  font-family: monospace;
-                  font-weight: bolder;
-                  ">
-                I'm a skilled software engineer passionate about creating innovative and dynamic application 🚀
+                <br />
+                <div
+                  id="greeting2"
+                  style="font-family: monospace; font-weight: bolder"
+                >
+                  I'm a skilled software developer passionate about creating
+                  innovative and dynamic application 🚀
+                </div>
               </div>
-              </p>
             </div>
             <div class="fadeFontColor">
               <p>
@@ -247,24 +254,32 @@
         </div>
       </div>
     </div>
+    <br>
     <div class="container">
       <!-- <div class="row"> -->
-      <div class="row" style="
-      border: 1px solid #E6ECF8; 
-      box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-      border-radius: 12px;
-      margin: 2%;
-      margin-top: 7%;
-      ">
-        <div class="col-12 col-md-6 mb-5" style="border-right: 1px solid #E6ECF8; padding: 5%;">
+      <div
+        class="row"
+        style="
+          border: 1px solid #e6ecf8;
+          box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+          border-radius: 12px;
+          margin: 2%;
+          margin-top: 7%;
+        "
+      >
+        <div
+          class="col-12 col-md-6 pb-5"
+          style="padding: 5%"
+          id="certificate-col"
+        >
           <div
             class="col-12 h1 h001 bigFontSize"
             id="certificate_skills_heading"
-            style="font-weight: bolder;"
+            style="font-weight: bolder"
           >
-          📜 Certificates
+            📚 Certificates
           </div>
-          <br>
+          <br />
           <div
             id="carouselExampleDark"
             class="carousel carousel-dark slide"
@@ -294,7 +309,7 @@
                 color: white;
               }
             </style>
-            <div class="carousel-inner">
+            <div class="carousel-inner" id="carousel-inner1">
               <div class="carousel-item active" data-bs-interval="5000">
                 <img
                   src="styles/certificates/React.jpg"
@@ -357,25 +372,31 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-6" style="padding: 5%;">
-          <div class="h1 h001 bigFontSize" style="font-weight: bolder;">💪 Skills</div>
+        <div class="col-12 col-md-6" style="padding: 5%">
+          <div class="h1 h001 bigFontSize" style="font-weight: bolder">
+            🎯 Skills
+          </div>
           <div>
-            <br>
+            <br />
             <p>
-              <b style="color: #6E07F3;">Programming languages:</b><br>
-              <span style="font-weight: 500;">
-                Java, HTML, CSS, JavaScript,
-                TypeScript, PHP, C, C#, Kotlin, SQL, Ruby.
+              <span style="color: #6e07f3; font-weight: 500"
+                >Programming languages:</span
+              ><br />
+              <span style="font-weight: 500">
+                Java, HTML, CSS, JavaScript, TypeScript, PHP, C, C#, Kotlin,
+                SQL, Ruby.
               </span>
             </p>
-            <br>
+            <br />
             <p>
-              <b style="color: #6E07F3;">Frameworks and tools:</b><br>
-              <span style="font-weight: 500;">
-              Spring Boot, Angular, React, jQuery,
-              Node.js, Ionic, .Net, Android Studio, Eclipse, MongoDB, MySQL, MS
-              SQL, Oracle SQL, Linux, Git/GitHub, AWS, Hadoop.
-            </span>
+              <span style="color: #6e07f3; font-weight: 500"
+                >Frameworks and tools:</span
+              ><br />
+              <span style="font-weight: 500">
+                Spring Boot, Angular, React, jQuery, Node.js, Ionic, .Net,
+                Android Studio, Eclipse, MongoDB, MySQL, MS SQL, Oracle SQL,
+                Linux, Git/GitHub, AWS, Hadoop.
+              </span>
             </p>
             <!-- <span class="h001">Programming languages</span><br /><br />
                      <div class="mb-2" id="skills_body">
@@ -448,11 +469,17 @@
       <div class="row mt-5">
         <div class="col-12 col-md-7 mt-2">
           <div
-            class="h1 h001 bigFontSize"
+            class="h1 h001 bigFontSize mb-4"
             id="experience_heading"
-            style="font-weight: bolder;"
+            style="font-weight: bolder"
           >
             My Experience
+            <img
+              src="styles/star.png"
+              alt=""
+              height="50px"
+              style="margin: auto"
+            />
           </div>
           <div>
             <!-- Section: Timeline -->
@@ -471,17 +498,20 @@
                     />
                   </a>
                   <h5 class="fw-bold">
-                    Computer Systems Technology - Advanced Diploma
+                    Computer Systems Technology Student
                   </h5>
-                  <p class="text-muted mb-2 fw-bold">
-                    Sheridan College <br />2020 Jan - 2022 Dec
+                  <p class="mb-2 fw-bold">
+                    Sheridan College <br>
+                    📅 2020 - 2022
                   </p>
                   <p class="text-muted">
-                    • GPA: 3.85 <br />
-                    • Completed coursework in Java OOP, web development, mobile
-                    app development, agile software development, data structures
-                    & algorithms, UI design, data communications & networking,
-                    IT process management, big data storage, and cloud systems.
+                    • Honor Advanced Diploma - GPA 3.85 <br />
+                    • Completed Java OOP, web development, mobile app
+                    development, and agile software development coursework.
+                    <br />
+                    • Gained knowledge in data structures & algorithms, UI
+                    design, data communications & networking, IT process
+                    management, big data storage, and cloud systems.<br />
                   </p>
                 </li>
                 <li class="timeline-item mb-5" data-aos="fade-up">
@@ -494,24 +524,19 @@
                     />
                   </a>
                   <h5 class="fw-bold">Web Developer</h5>
-                  <p class="text-muted mb-2 fw-bold">
-                    iContribute, Toronto, Ontario <br />2021 September - August
-                    2022
+                  <p class="mb-2 fw-bold">
+                    iContribute <br>
+                    📍 Toronto &nbsp; 📅 2021 - 2022
                   </p>
                   <p class="text-muted">
-                    • Leveraged React.js for front-end integration and
-                    MongoDB/Node.js for back-end development to create a dynamic
-                    web app that delivered a seamless user experience.<br />
-                    • Proactively identified and addressed 30+ bugs, bolstering
-                    the security and stability of the web app, while also
-                    developing 10+ features across various tasks to enhance
-                    functionality.<br />
-                    • Collaborated with programming, design, and marketing teams
-                    to drive project progress, contributing to a cohesive and
-                    high-performing team environment.<br />
-                    • Maintained strict adherence to coding standards and
-                    diligently updated documentation to ensure clear
-                    communication and facilitate seamless project handoffs
+                    • Utilized React.js and MongoDB/Node.js to build a dynamic
+                    web app with a seamless user experience. <br />
+                    • Addressed 30+ bugs, improving security and stability, and
+                    implemented 10+ features to enhance functionality. <br />
+                    • Collaborated with cross-functional teams to drive project
+                    progress and foster a high-performing environment. <br />
+                    • Adhered to coding standards, updated documentation, and
+                    facilitated smooth project handoffs. <br />
                   </p>
                 </li>
                 <li class="timeline-item mb-5" data-aos="fade-up">
@@ -524,26 +549,19 @@
                     />
                   </a>
                   <h5 class="fw-bold">Junior Software Developer</h5>
-                  <p class="text-muted mb-2 fw-bold">
-                    The Urban Writers, Toronto, Ontario <br />2022 May – 2022
-                    August
+                  <p class="mb-2 fw-bold">
+                    The Urban Writers <br>
+                    📍 Toronto &nbsp; 📅 2022
                   </p>
                   <p class="text-muted">
-                    • Successfully handled 40+ bug fixes and new feature
-                    development tickets using Ruby on Rails, ensuring timely
-                    resolution and enhancing overall user experience. <br />
-                    • Collaborated seamlessly with a cross-functional team
-                    comprising four senior engineers, two testers, and a product
-                    design team to deliver high-quality projects within budget
-                    and on schedule.<br />
-                    • Actively participated in testing and quality control
-                    processes, while also serving as an advisor and team leader
-                    to ensure adherence to industry best practices and maintain
-                    high standards of work.<br />
-                    • Conducted code reviews and evaluated the architecture of
-                    peer code to ensure compliance with company development
-                    standards and best practices, contributing to the overall
-                    quality and consistency of the codebase
+                    • Resolved 40+ bug fixes and implemented new features in
+                    Ruby on Rails, enhancing user experience.<br />
+                    • Collaborated with cross-functional team to deliver
+                    projects on time and within budget.<br />
+                    • Contributed to testing and quality control processes,
+                    ensuring adherence to best practices.<br />
+                    • Conducted code reviews and evaluated peer code for quality
+                    and adherence to standards.<br />
                   </p>
                 </li>
               </ul>
@@ -557,7 +575,7 @@
         <div
           class="col-12 h1 h001 bigFontSize"
           id="portfolio_heading"
-          style="font-weight: bolder;"
+          style="font-weight: bolder"
         >
           Portfolio
         </div>

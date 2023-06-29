@@ -41,9 +41,9 @@
 
 if(window.innerWidth<768){
   const navLinks = document.querySelectorAll('.nav-item')
-  const menuToggle = document.getElementById('navbarNavAltMarkup')
-  const bsCollapse = new bootstrap.Collapse(menuToggle)
   navLinks.forEach((l) => {
-      l.addEventListener('click', () => { bsCollapse.toggle() })
+      l.addEventListener('click', () => { 
+        document.getElementById('navbarNavAltMarkup').classList.remove("show");
+       })
   })
 }
