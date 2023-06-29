@@ -22,6 +22,10 @@
   padding: 90px 0 90px 0;
 }
 
+#background2{
+  padding: 80px;
+}
+
 @media (max-width: 767.98px) {
   #greeting1 {
     font-size: 180%;
@@ -38,6 +42,9 @@
   }
   #background1{
     padding: 50px 0 50px 0;
+  }
+  #background2{
+    padding: 20px;
   }
 }
 

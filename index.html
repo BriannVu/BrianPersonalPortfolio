@@ -43,10 +43,18 @@
         margin: 20px;
       }
       .projectBox {
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+        /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
           0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
           0 8px 16px rgba(0, 0, 0, 0.11);
-        border-radius: 30px;
+        border-radius: 30px; */
+        border: 2px solid #000;
+        background-color: white;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+      }
+      .projectBoxContainer{
+        padding: 3%;
       }
     </style>
   </head>
@@ -176,10 +184,7 @@
       <div class="row" style="height: 6vh"></div>
       <br />
     </div>
-    <div
-      id="background1"
-      style="background-color: #6e07f3; color: white;"
-    >
+    <div id="background1" style="background-color: #3f54f7; color: white">
       <div class="container">
         <div class="row">
           <!-- <div
@@ -199,8 +204,12 @@
                   width="100%"
                   alt="profile_pic"
                   style="
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-                      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                      100px 100px 80px rgba(0, 0, 0, 0.07);
                     border-radius: 34px;
                   "
                 />
@@ -254,7 +263,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="container">
       <!-- <div class="row"> -->
       <div
@@ -379,7 +388,7 @@
           <div>
             <br />
             <p>
-              <span style="color: #6e07f3; font-weight: 500"
+              <span style="color: #3f54f7; font-weight: 500"
                 >Programming languages:</span
               ><br />
               <span style="font-weight: 500">
@@ -389,7 +398,7 @@
             </p>
             <br />
             <p>
-              <span style="color: #6e07f3; font-weight: 500"
+              <span style="color: #3f54f7; font-weight: 500"
                 >Frameworks and tools:</span
               ><br />
               <span style="font-weight: 500">
@@ -497,12 +506,11 @@
                       class="mb-4"
                     />
                   </a>
-                  <h5 class="fw-bold">
-                    Computer Systems Technology Student
-                  </h5>
+                  <h5 class="fw-bold">Computer Systems Technology Student</h5>
                   <p class="mb-2 fw-bold">
-                    Sheridan College <br>
-                    <img src="styles/calendar.png" width="20px" alt=""> 2020 - 2022
+                    Sheridan College <br />
+                    <img src="styles/calendar.png" width="20px" alt="" /> 2020 -
+                    2022
                   </p>
                   <p class="text-muted">
                     • Honor Advanced Diploma - GPA 3.85 <br />
@@ -525,8 +533,10 @@
                   </a>
                   <h5 class="fw-bold">Web Developer</h5>
                   <p class="mb-2 fw-bold">
-                    iContribute <br>
-                    📍 Toronto &nbsp; <img src="styles/calendar.png" width="20px" alt=""> 2021 - 2022
+                    iContribute <br />
+                    📍 Toronto &nbsp;
+                    <img src="styles/calendar.png" width="20px" alt="" /> 2021 -
+                    2022
                   </p>
                   <p class="text-muted">
                     • Utilized React.js and MongoDB/Node.js to build a dynamic
@@ -550,8 +560,9 @@
                   </a>
                   <h5 class="fw-bold">Junior Software Developer</h5>
                   <p class="mb-2 fw-bold">
-                    The Urban Writers <br>
-                    📍 Toronto &nbsp; <img src="styles/calendar.png" width="20px" alt=""> 2022
+                    The Urban Writers <br />
+                    📍 Toronto &nbsp;
+                    <img src="styles/calendar.png" width="20px" alt="" /> 2022
                   </p>
                   <p class="text-muted">
                     • Resolved 40+ bug fixes and implemented new features in
@@ -571,19 +582,23 @@
         </div>
       </div>
       <br />
+      
+    </div>
+    <div id="background2" style="background-color: #3f54f7;">
       <div class="row">
         <div
           class="col-12 h1 h001 bigFontSize"
           id="portfolio_heading"
-          style="font-weight: bolder"
+          style="color: white;"
         >
+        <img src="styles/project.png" width="60px" alt="">
           Portfolio
         </div>
-        <div class="col-12 col-md-6">
-          <div class="projectBox m-3 p-3">
+        <div class="col-12 col-md-6 projectBoxContainer">
+          <div class="projectBox">
             <div class="display-6">Our Cultures App</div>
             #PHP, HTML/CSS, MySQL
-            <br /><br />
+            <hr>
             • Developed hybrid mobile app for Android and iOS using Ionic
             framework, Angular, TypeScript, and Firebase <br />
             • App features user-authenticated calendar with notification and
@@ -618,11 +633,11 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="projectBox m-3 p-3">
+        <div class="col-12 col-md-6 projectBoxContainer">
+          <div class="projectBox">
             <div class="display-6">Company’s Discussion Forum</div>
             #JavaSpring, Thymeleaf, Junit, H2database, JDBC API
-            <br /><br />
+            <hr>
             • Developed a secure and dynamic multi-page web application using
             the Spring Boot Framework.<br />
             • Implemented a data-driven, object-oriented architecture to ensure
@@ -646,12 +661,11 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="projectBox m-3 p-3">
+        <div class="col-12 col-md-6 projectBoxContainer">
+          <div class="projectBox">
             <div class="display-6">Player Management App</div>
             #PHP, MySQL, HTML, CSS, and JavaScript
-            <br />
-            <br />
+            <hr>
             • Developed a dynamic web application using PHP, MySQL, HTML, CSS,
             and JavaScript to manage player records.<br />
             • Implemented a database system and CRUD functionality to allow for
@@ -684,12 +698,11 @@
             >
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="projectBox m-3 p-3">
+        <div class="col-12 col-md-6 projectBoxContainer">
+          <div class="projectBox">
             <div class="display-6">Tic Tac Toe</div>
             #JavaScript, HTML/CSS
-            <br />
-            <br />
+            <hr>
             • Developed a fully-functional tictactoe website game using HTML,
             CSS, and JavaScript. <br />
             • Implemented a two-player game mode with user-friendly game
@@ -721,12 +734,11 @@
             >
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="projectBox m-3 p-3">
+        <div class="col-12 col-md-6 projectBoxContainer">
+          <div class="projectBox">
             <div class="display-6">Rock, Paper, Scissors</div>
             #JavaScript, HTML/CSS
-            <br />
-            <br />
+            <hr>
             • Developed a fully-functional Rock Paper Scissors game using HTML,
             CSS, and JavaScript.<br />
             • Implemented gameplay against the computer, providing an engaging
