@@ -270,3 +270,7 @@
   background-repeat: no-repeat;
   background-size: cover; */
 }
+
+.card-title {
+  font-weight: 600;
+}
