@@ -75,46 +75,54 @@
   </head>
   <body>
     <div id="backdrop"></div>
-    <nav
-      class="navbar navbar-expand-lg nav navbar-light ps-md-5 pe-md-5 fixed-top top-0 start-0 w-100"
-      style="
-        background-color: rgb(255, 255, 255, 0.9);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      "
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Brian Vu</a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation
+    <div class="container">
+      <div class="row" style="height: 9vh">
+        <div class="col-12 mb-5">
+          <nav
+            class="navbar navbar-expand-lg nav navbar-light ps-md-5 pe-md-5 fixed-top top-0 start-0 w-100"
+            style="
+              background-color: rgb(255, 255, 255, 0.9);
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            "
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Brian Vu</a>
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation
                      "
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link me-md-3 nav-item" href="#">Home</a>
-            <a
-              class="nav-link me-md-3 nav-item"
-              href="#certificate_skills_heading"
-              >Certificates & Skill</a
-            >
-            <a class="nav-link nav-item" href="#experience_heading"
-              >Experience</a
-            >
-            <a class="nav-link nav-item" href="#portfolio_heading">Portfolio</a>
-          </div>
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup"
+              >
+                <div class="navbar-nav">
+                  <a class="nav-link me-md-3 nav-item" href="#">Home</a>
+                  <a
+                    class="nav-link me-md-3 nav-item"
+                    href="#certificate_skills_heading"
+                    >Certificates & Skill</a
+                  >
+                  <a class="nav-link nav-item" href="#experience_heading"
+                    >Experience</a
+                  >
+                  <a class="nav-link nav-item" href="#portfolio_heading"
+                    >Portfolio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-    </nav>
+    </div>
     <div class="container">
       <div class="row" style="height: 72vh">
         <div class="col-md-12"></div>
@@ -664,7 +672,7 @@
       <br />
     </div>
 
-<!-- Portfolio ----------------------->
+    <!-- Portfolio ----------------------->
 
     <style>
       .projectBoxDesc {
@@ -698,16 +706,23 @@
                 href="https://briannvu.github.io/react-snackorder-app/"
                 target="parent"
               >
-              <div class="projectBoxImage" style="background: url(styles/projects/snack-app.jpg) no-repeat center; background-size: cover;"></div>
+                <div
+                  class="projectBoxImage"
+                  style="
+                    background: url(styles/projects/snack-app.jpg) no-repeat
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
               </a>
               <div class="projectBoxDesc">
                 <a
-                href="https://briannvu.github.io/react-snackorder-app/"
-                target="parent"
-                class="black-color black-color-hover"
+                  href="https://briannvu.github.io/react-snackorder-app/"
+                  target="parent"
+                  class="black-color black-color-hover"
                 >
-                <div style="font-size: larger">Snack Shop</div>
-              </a>
+                  <div style="font-size: larger">Snack Shop</div>
+                </a>
                 <div
                   class="mb-3"
                   style="font-weight: lighter; font-size: 0.9em"
@@ -718,7 +733,7 @@
                 favorite snacks with ease, and have them delivered straight to
                 your door for a convenient and delicious experience.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP1"
                   role="button"
@@ -770,9 +785,7 @@
                 href=""
                 target="parent"
               > -->
-              <div
-              class="projectBoxImage"
-              >
+              <div class="projectBoxImage">
                 <img
                   src="styles/projects/ourculturetheapp.PNG"
                   alt=""
@@ -792,7 +805,7 @@
                 Cultures - The App'. Explore events from various religions,
                 bringing people together and celebrating diversity.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP2"
                   role="button"
@@ -851,9 +864,13 @@
                 target="parent"
               > -->
               <div
-              class="projectBoxImage" style="background: url(styles/projects/companydiscussionforum.PNG) no-repeat center; background-size: cover;"
-              >
-              </div>
+                class="projectBoxImage"
+                style="
+                  background: url(styles/projects/companydiscussionforum.PNG)
+                    no-repeat center;
+                  background-size: cover;
+                "
+              ></div>
               <!-- </a> -->
               <div class="projectBoxDesc">
                 <div style="font-size: larger">Company’s Discussion Forum</div>
@@ -867,7 +884,7 @@
                 app. Facilitate company-wide discussions, enabling effortless
                 creation of threads, posts, and interactive news comments.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP3"
                   role="button"
@@ -922,23 +939,24 @@
 
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <a
-                href=""
-                target="parent"
-              >
+              <a href="" target="parent">
                 <div
-                class="projectBoxImage"  style="background: url(styles/projects/player_management.png) no-repeat center; background-size: cover;"
-                >
-                </div>
+                  class="projectBoxImage"
+                  style="
+                    background: url(styles/projects/player_management.png)
+                      no-repeat center;
+                    background-size: cover;
+                  "
+                ></div>
               </a>
               <div class="projectBoxDesc">
                 <a
-                href="https://vu8.dev.fast.sheridanc.on.ca/PersonalProjects/SQL-Management/index_HOME.php"
-                target="parent"
-                class="black-color black-color-hover"
+                  href="https://vu8.dev.fast.sheridanc.on.ca/PersonalProjects/SQL-Management/index_HOME.php"
+                  target="parent"
+                  class="black-color black-color-hover"
                 >
-                <div style="font-size: larger">Player Management App</div>
-              </a>
+                  <div style="font-size: larger">Player Management App</div>
+                </a>
                 <div
                   class="mb-3"
                   style="font-weight: lighter; font-size: 0.9em"
@@ -949,7 +967,7 @@
                 application. Streamline record management with a user-friendly
                 interface, search capabilities, and efficient data handling.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP4"
                   role="button"
@@ -995,18 +1013,22 @@
             <div class="projectBox">
               <a href="" target="parent">
                 <div
-                  class="projectBoxImage" style="background: url(styles/projects/tictactoe.PNG) no-repeat center; background-size: cover;"
-                >
-                </div>
+                  class="projectBoxImage"
+                  style="
+                    background: url(styles/projects/tictactoe.PNG) no-repeat
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
               </a>
               <div class="projectBoxDesc">
                 <a
-                href="https://briannvu.github.io/TicTacToe/"
-                target="parent"
-                class="black-color black-color-hover"
+                  href="https://briannvu.github.io/TicTacToe/"
+                  target="parent"
+                  class="black-color black-color-hover"
                 >
-                <div style="font-size: larger">Tic Tac Toe Game</div>
-              </a>
+                  <div style="font-size: larger">Tic Tac Toe Game</div>
+                </a>
                 <div
                   class="mb-3"
                   style="font-weight: lighter; font-size: 0.9em"
@@ -1017,7 +1039,7 @@
                 Tic Tac Toe game. Challenge friends or test your skills against
                 the computer in a fun and strategic battle for victory.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP5"
                   role="button"
@@ -1060,23 +1082,26 @@
 
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <a
-                href=""
-                target="parent"
-              >
+              <a href="" target="parent">
                 <div
-                  class="projectBoxImage" style="background: url(styles/projects/rockpaperscissors.PNG) no-repeat center; background-size: cover;"
-                >
-                </div>
+                  class="projectBoxImage"
+                  style="
+                    background: url(styles/projects/rockpaperscissors.PNG)
+                      no-repeat center;
+                    background-size: cover;
+                  "
+                ></div>
               </a>
               <div class="projectBoxDesc">
                 <a
-                href="https://briannvu.github.io/Rock-Paper-Scissors/"
-                target="parent"
-                class="black-color black-color-hover"
+                  href="https://briannvu.github.io/Rock-Paper-Scissors/"
+                  target="parent"
+                  class="black-color black-color-hover"
                 >
-                <div style="font-size: larger">Rock, Paper, Scissors Game</div>
-              </a>
+                  <div style="font-size: larger">
+                    Rock, Paper, Scissors Game
+                  </div>
+                </a>
                 <div
                   class="mb-3"
                   style="font-weight: lighter; font-size: 0.9em"
@@ -1087,7 +1112,7 @@
                 Rock, Paper, Scissors web game. Engage in a timeless contest of
                 choices, competing against the computer to claim victory.<br />
                 <a
-                  class="black-color none-underlined"
+                  class="none-underlined"
                   data-bs-toggle="collapse"
                   href="#collapseP6"
                   role="button"
@@ -1130,7 +1155,6 @@
       </div>
     </div>
     <!-- Portfolio end ------------>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
