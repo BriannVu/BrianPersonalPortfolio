@@ -11,15 +11,23 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!---------------- Google font ----------->
+    <!---------------- Google font ------------>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      @font-face {
+        font-family: "Roboto";
+        src: url(styles/text_font/Roboto/Roboto-Regular.ttf);
+      }
     </style>
+    <!--  -->
 
-    <!-- ---------------------------------- -->
-    <!-- Scroll -->
+    <!---------------- Scroll Effect----------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--  -->
+
+    <!---------------- Jquery ----------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--  -->
+
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
@@ -50,75 +58,64 @@
           0 8px 16px rgba(0, 0, 0, 0.11);
         border-radius: 30px; */
         /* border: 1px solid #000; */
-        background-color: white;
+        border: solid black 1px;
         border-radius: 3px;
-        padding: 2rem;
         width: 100%;
-        height: 100%;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-          0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-          0 16px 16px rgba(0, 0, 0, 0.12);
+        height: fit-content;
         transition: 0.3s;
       }
       .projectBox:hover {
-        box-shadow: 0 1px 1px #999999, 0 2px 2px #999999, 0 4px 4px #999999,
-          0 8px 8px #999999, 0 16px 16px #999999;
-        transition: 0.3s;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       }
       .projectBoxContainer {
-        padding: 3%;
+        padding: 4%;
       }
     </style>
   </head>
   <body>
     <div id="backdrop"></div>
-    <div class="container">
-      <div class="row" style="height: 9vh">
-        <div class="col-12 mb-5">
-          <nav
-            class="navbar navbar-expand-lg nav navbar-light ps-md-5 pe-md-5 fixed-top top-0 start-0 w-100"
-            style="
-              background-color: rgb(255, 255, 255, 0.9);
-              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            "
-          >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Brian Vu</a>
-              <button
-                class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation
+    <nav
+      class="navbar navbar-expand-lg nav navbar-light ps-md-5 pe-md-5 fixed-top top-0 start-0 w-100"
+      style="
+        background-color: rgb(255, 255, 255, 0.9);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brian Vu</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation
                      "
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div
-                class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup"
-              >
-                <div class="navbar-nav">
-                  <a class="nav-link me-md-3 nav-item" href="#">Home</a>
-                  <a
-                    class="nav-link me-md-3 nav-item"
-                    href="#certificate_skills_heading"
-                    >Certificates & Skill</a
-                  >
-                  <a class="nav-link nav-item" href="#experience_heading"
-                    >Experience</a
-                  >
-                  <a class="nav-link nav-item" href="#portfolio_heading"
-                    >Portfolio</a
-                  >
-                </div>
-              </div>
-            </div>
-          </nav>
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link me-md-3 nav-item" href="#">Home</a>
+            <a
+              class="nav-link me-md-3 nav-item"
+              href="#certificate_skills_heading"
+              >Certificates & Skill</a
+            >
+            <a class="nav-link nav-item" href="#experience_heading"
+              >Experience</a
+            >
+            <a class="nav-link nav-item" href="#portfolio_heading">Portfolio</a>
+          </div>
         </div>
       </div>
+    </nav>
+    <div class="container">
       <div class="row" style="height: 72vh">
         <div class="col-md-12"></div>
         <div class="col-12 col-md-6" style="z-index: -1">
@@ -666,7 +663,22 @@
       </div>
       <br />
     </div>
-    <div id="background2" class="mt-2 pt-4" style="background-color: #f7f7f7">
+
+<!-- Portfolio ----------------------->
+
+    <style>
+      .projectBoxDesc {
+        padding: 10px;
+      }
+      .details-link {
+        color: black;
+      }
+      .collapseP {
+        margin-top: 10px;
+        /* font-size: 0.9em; */
+      }
+    </style>
+    <div id="background2" class="mt-2 pt-4">
       <div class="container">
         <div class="row">
           <div class="col-12 h1 h001 bigFontSize" id="portfolio_heading">
@@ -674,234 +686,446 @@
           </div>
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">React Snack App</div>
-              #React, HTML/CSS/JavaScript, Firebase
-              <hr />
-              • Developed a dynamic React web application for food ordering,
-              featuring an intuitive and visually appealing user interface that
-              ensures a seamless and engaging experience.<br />
-              • Utilized React Hooks, including useState, useEffect, useReducer,
-              and React Router, to optimize functionality and enhance user
-              interactions.<br />
-              • Integrated a real-time Firebase database for live updates and
-              accurate data management.<br />
-              • Implemented Admin Login functionality to efficiently manage user
-              and order information.<br /><br />
-              Admin Page Login Credential<br />
-              • Username: admin <br />
-              • Password: admin<br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/react-snackorder-app"
-                target="parent"
-              >
-                <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
-                />
-              </a>
-              <a
-                href="https://briannvu.github.io/react-snackorder-app/"
-                target="parent"
-                class="ms-2 text-decoration-none project_link"
-                style="vertical-align: bottom; font-size: 1.2em"
-                >Demo</a
-              >
+              <div class="projectBoxImage">
+                <a
+                  href="https://briannvu.github.io/react-snackorder-app/"
+                  target="parent"
+                >
+                  <img
+                    src="styles/projects/snack-app.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </a>
+              </div>
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Snack Shop</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #React, HTML/CSS/JavaScript, Firebase
+                </div>
+                Discover a world of flavor at the online snack shop. Order your
+                favorite snacks with ease, and have them delivered straight to
+                your door for a convenient and delicious experience.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP1"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP1">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed a dynamic React web application for food
+                    ordering, featuring an intuitive and visually appealing user
+                    interface that ensures a seamless and engaging
+                    experience.<br />
+                    • Utilized React Hooks, including useState, useEffect,
+                    useReducer, and React Router, to optimize functionality and
+                    enhance user interactions.<br />
+                    • Integrated a real-time Firebase database for live updates
+                    and accurate data management.<br />
+                    • Implemented Admin Login functionality to efficiently
+                    manage user and order information.<br /><br />
+                    Admin Page Login Credential<br />
+                    • Username: admin <br />
+                    • Password: admin<br />
+
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/react-snackorder-app"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">Our Cultures App</div>
-              #Angular, Ionic, TypeScript, and Firebase
-              <hr />
-              • Developed hybrid mobile app for Android and iOS using Ionic
-              framework, Angular, TypeScript, and Firebase <br />
-              • App features user-authenticated calendar with notification and
-              social media sharing capabilities <br />
-              • Delivered essential documents for customer satisfaction,
-              including implementation plan and quality assurance document
-              <br />
-              • Demonstrates expertise in mobile app development and project
-              management <br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/OurCultureTheApp"
+              <!-- <a
+                href=""
                 target="parent"
+              > -->
+              <div
+              class="projectBoxImage"
               >
                 <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
+                  src="styles/projects/ourculturetheapp.PNG"
+                  alt=""
+                  height="100%"
                 />
-              </a>
-              <a
-                class="text-decoration-none"
-                href="https://www.youtube.com/watch?v=Hajoi-CYSSY&ab_channel=DorisMa"
-                target="parent"
-              >
-                <img
-                  class="mt-2 ms-2"
-                  src="styles/youtube_icon.png"
-                  alt="github"
-                  width="30px"
-                />
-              </a>
+              </div>
+              <!-- </a> -->
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Our Cultures App</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #Angular, Ionic, TypeScript, and Firebase
+                </div>
+                Learn about different cultures and festivals in Canada with 'Our
+                Cultures - The App'. Explore events from various religions,
+                bringing people together and celebrating diversity.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP2"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP2">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed hybrid mobile app for Android and iOS using
+                    Ionic framework, Angular, TypeScript, and Firebase <br />
+                    • App features user-authenticated calendar with notification
+                    and social media sharing capabilities <br />
+                    • Delivered essential documents for customer satisfaction,
+                    including implementation plan and quality assurance document
+                    <br />
+                    • Demonstrates expertise in mobile app development and
+                    project management <br />
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/OurCultureTheApp"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.youtube.com/watch?v=Hajoi-CYSSY&ab_channel=DorisMa"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2 ms-2"
+                        src="styles/youtube_icon.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">Company’s Discussion Forum</div>
-              #JavaSpring, Thymeleaf, Junit, H2database, JDBC API
-              <hr />
-              • Developed a secure and dynamic multi-page web application using
-              the Spring Boot Framework.<br />
-              • Implemented a data-driven, object-oriented architecture to
-              ensure scalability and maintainability of the application.<br />
-              • Conducted thorough testing of the application's components,
-              ensuring its quality and reliability.<br />
-              • Utilized Java programming language and MySQL database to store,
-              retrieve, and manage data in a discussion forum designed for
-              company members.<br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/Discussion-Forum"
+              <!-- <a
+                href=""
                 target="parent"
+              > -->
+              <div
+              class="projectBoxImage"
               >
                 <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
+                  src="styles/projects/companydiscussionforum.PNG"
+                  alt=""
+                  height="100%"
                 />
-              </a>
-              <a
-                class="text-decoration-none"
-                href="https://www.youtube.com/watch?v=U7NsrTbkP8o&ab_channel=BrianVu"
-                target="parent"
-              >
-                <img
-                  class="mt-2 ms-2"
-                  src="styles/youtube_icon.png"
-                  alt="github"
-                  width="30px"
-                />
-              </a>
+              </div>
+              <!-- </a> -->
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Company’s Discussion Forum</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #JavaSpring, Thymeleaf, Junit, H2database, JDBC API
+                </div>
+                Energize internal communication with our user-friendly forum web
+                app. Facilitate company-wide discussions, enabling effortless
+                creation of threads, posts, and interactive news comments.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP3"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP3">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed a secure and dynamic multi-page web application
+                    using the Spring Boot Framework.<br />
+                    • Implemented a data-driven, object-oriented architecture to
+                    ensure scalability and maintainability of the
+                    application.<br />
+                    • Conducted thorough testing of the application's
+                    components, ensuring its quality and reliability.<br />
+                    • Utilized Java programming language and MySQL database to
+                    store, retrieve, and manage data in a discussion forum
+                    designed for company members.<br />
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/Discussion-Forum"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.youtube.com/watch?v=U7NsrTbkP8o&ab_channel=BrianVu"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2 ms-2"
+                        src="styles/youtube_icon.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">Player Management App</div>
-              #PHP, MySQL, HTML, CSS, and JavaScript
-              <hr />
-              • Developed a dynamic web application using PHP, MySQL, HTML, CSS,
-              and JavaScript to manage player records.<br />
-              • Implemented a database system and CRUD functionality to allow
-              for efficient viewing, insertion, updating, and deletion of player
-              data.<br />
-              • Designed a user-friendly interface that displays player
-              attributes and includes search functionality to filter player data
-              based on specific criteria.<br />
-              • Demonstrated proficiency in web development concepts and
-              programming skills, including object-oriented programming, SQL
-              queries, and data validation.<br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/MySQL-Management"
-                target="parent"
-              >
-                <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
-                />
-              </a>
               <a
                 href="https://vu8.dev.fast.sheridanc.on.ca/PersonalProjects/SQL-Management/index_HOME.php"
                 target="parent"
-                class="ms-2 text-decoration-none project_link"
-                style="vertical-align: bottom; font-size: 1.2em"
-                >Demo</a
               >
+                <div
+                class="projectBoxImage"
+                >
+                  <img
+                    src="styles/projects/player_management.png"
+                    alt=""
+                    height="100%"
+                  />
+                </div>
+              </a>
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Player Management App</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #PHP, MySQL, HTML, CSS, and JavaScript
+                </div>
+                Easily oversee player details through our intuitive web
+                application. Streamline record management with a user-friendly
+                interface, search capabilities, and efficient data handling.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP4"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP4"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP4">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed a dynamic web application using PHP, MySQL,
+                    HTML, CSS, and JavaScript to manage player records.<br />
+                    • Implemented a database system and CRUD functionality to
+                    allow for efficient viewing, insertion, updating, and
+                    deletion of player data.<br />
+                    • Designed a user-friendly interface that displays player
+                    attributes and includes search functionality to filter
+                    player data based on specific criteria.<br />
+                    • Demonstrated proficiency in web development concepts and
+                    programming skills, including object-oriented programming,
+                    SQL queries, and data validation.<br />
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/MySQL-Management"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">Tic Tac Toe</div>
-              #JavaScript, HTML/CSS
-              <hr />
-              • Developed a fully-functional tictactoe website game using HTML,
-              CSS, and JavaScript. <br />
-              • Implemented a two-player game mode with user-friendly game
-              interface, allowing players to take turns and select their
-              preferred game symbols.<br />
-              • Designed a responsive score board to keep track of each player's
-              score throughout the game.<br />
-              • Demonstrated proficiency in web development concepts and
-              programming skills, including DOM manipulation, event handling,
-              and CSS styling.<br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/TicTacToe"
-                target="parent"
-              >
-                <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
-                />
+              <a href="https://briannvu.github.io/TicTacToe/" target="parent">
+                <div
+                  class="projectBoxImage"
+                >
+                  <img
+                    src="styles/projects/tictactoe.PNG"
+                    alt=""
+                    height="100%"
+                  />
+                </div>
               </a>
-              <a
-                href="https://briannvu.github.io/TicTacToe/"
-                target="parent"
-                class="ms-2 text-decoration-none project_link"
-                style="vertical-align: bottom; font-size: 1.2em"
-                >Demo</a
-              >
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Tic Tac Toe Game</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #JavaScript, HTML/CSS
+                </div>
+                Enjoy a classic gaming experience with our engaging web-based
+                Tic Tac Toe game. Challenge friends or test your skills against
+                the computer in a fun and strategic battle for victory.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP5"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP5"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP5">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed a fully-functional tictactoe website game using
+                    HTML, CSS, and JavaScript. <br />
+                    • Implemented a two-player game mode with user-friendly game
+                    interface, allowing players to take turns and select their
+                    preferred game symbols.<br />
+                    • Designed a responsive score board to keep track of each
+                    player's score throughout the game.<br />
+                    • Demonstrated proficiency in web development concepts and
+                    programming skills, including DOM manipulation, event
+                    handling, and CSS styling.<br />
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/TicTacToe"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 projectBoxContainer">
             <div class="projectBox">
-              <div class="display-6">Rock, Paper, Scissors</div>
-              #JavaScript, HTML/CSS
-              <hr />
-              • Developed a fully-functional Rock Paper Scissors game using
-              HTML, CSS, and JavaScript.<br />
-              • Implemented gameplay against the computer, providing an engaging
-              and interactive experience for users.<br />
-              • Designed a scoring system that tracks user and computer scores
-              and displays the number of wins for both.<br />
-              • Demonstrated proficiency in web development concepts and
-              programming skills, including DOM manipulation, event handling,
-              and CSS styling.<br />
-              <a
-                class="text-decoration-none"
-                href="https://github.com/BriannVu/Rock-Paper-Scissors"
-                target="parent"
-              >
-                <img
-                  class="mt-2"
-                  src="styles/github.png"
-                  alt="github"
-                  width="30px"
-                />
-              </a>
               <a
                 href="https://briannvu.github.io/Rock-Paper-Scissors/"
                 target="parent"
-                class="ms-2 text-decoration-none project_link"
-                style="vertical-align: bottom; font-size: 1.2em"
-                >Demo</a
               >
+                <div
+                  class="projectBoxImage"
+                >
+                  <img
+                    src="styles/projects/rockpaperscissors.PNG"
+                    alt=""
+                    height="100%"
+                  />
+                </div>
+              </a>
+              <div class="projectBoxDesc">
+                <div style="font-size: larger">Rock, Paper, Scissors Game</div>
+                <div
+                  class="mb-3"
+                  style="font-weight: lighter; font-size: 0.9em"
+                >
+                  #JavaScript, HTML/CSS
+                </div>
+                Experience the thrill of decision-making in our interactive
+                Rock, Paper, Scissors web game. Engage in a timeless contest of
+                choices, competing against the computer to claim victory.<br />
+                <a
+                  class="details-link"
+                  data-bs-toggle="collapse"
+                  href="#collapseP6"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseP6"
+                  style="font-size: 0.9em"
+                >
+                  Show details
+                </a>
+                <div class="collapse" id="collapseP6">
+                  <div class="collapseP">
+                    <hr />
+                    • Developed a fully-functional Rock Paper Scissors game
+                    using HTML, CSS, and JavaScript.<br />
+                    • Implemented gameplay against the computer, providing an
+                    engaging and interactive experience for users.<br />
+                    • Designed a scoring system that tracks user and computer
+                    scores and displays the number of wins for both.<br />
+                    • Demonstrated proficiency in web development concepts and
+                    programming skills, including DOM manipulation, event
+                    handling, and CSS styling.<br />
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/BriannVu/Rock-Paper-Scissors"
+                      target="parent"
+                    >
+                      <img
+                        class="mt-2"
+                        src="styles/github.png"
+                        alt="github"
+                        width="30px"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Portfolio end ------------>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
