@@ -17,6 +17,16 @@
         font-family: "Roboto";
         src: url(styles/text_font/Roboto/Roboto-Regular.ttf);
       }
+      @font-face {
+        font-family: "RobotoLight";
+        src: url(styles/text_font/Roboto/Roboto-Light.ttf);
+      }
+      .RobotoLight {
+        font-family: "RobotoLight";
+      }
+      .Roboto {
+        font-family: "Roboto";
+      }
     </style>
     <!--  -->
 
@@ -39,11 +49,8 @@
         font-family: "Roboto";
         font-weight: 400;
       }
-      .h001 {
-        font-family: "Roboto";
-      }
       .bigFontSize {
-        font-size: 30px;
+        font-size: 2em;
       }
       .fadeFontColor {
         color: #c5c5c5;
@@ -53,15 +60,8 @@
         margin: 20px;
       }
       .projectBox {
-        /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-          0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
-          0 8px 16px rgba(0, 0, 0, 0.11);
-        border-radius: 30px; */
-        /* border: 1px solid #000; */
-        /* border: solid black 1px; */
         background-color: #f8f8f8;
-        border-radius: 3px;
-        border-radius: 24px;
+        border-radius: 7px;
         padding: 20px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -72,9 +72,6 @@
       .projectBox:hover {
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
           rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-      }
-      .projectBoxContainer {
-        padding: 4%;
       }
     </style>
   </head>
@@ -91,7 +88,9 @@
             "
           >
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Brian Vu</a>
+              <a class="navbar-brand" href="#" style="font-family: RobotoLight"
+                >BrianVu</a
+              >
               <button
                 class="navbar-toggler border-0"
                 type="button"
@@ -113,15 +112,15 @@
                   <a class="nav-link me-md-3 nav-item" href="#portfolio_heading"
                     >Portfolio</a
                   >
-                   <a
+                  <a
                     class="nav-link me-md-3 nav-item"
                     href="#certificate_skills_heading"
                     >Certificates & Skill</a
                   >
                   <a
                     class="nav-link me-md-3 nav-item"
-                    href="#experience_heading"
-                    >Experience</a
+                    href="#background_heading"
+                    >Background</a
                   >
                 </div>
               </div>
@@ -133,7 +132,7 @@
     <div class="container">
       <div class="row" style="height: 72vh">
         <div class="col-md-12"></div>
-        <div class="col-12 col-md-6" style="z-index: -1">
+        <div class="col-12 col-md-5" style="z-index: -1">
           <div
             class="mx-auto d-block float-md-end floating"
             style="width: fit-content"
@@ -144,7 +143,7 @@
                 class="speech-bubble rounded ps-2 pe-2"
                 style="width: 270px"
               >
-                Welcome to my website!
+                Hello, I'm Brian Vu. <br />Welcome to my website.
               </div>
             </div>
             <img
@@ -152,28 +151,27 @@
               src="styles/IMG_5033.PNG"
               alt="profile_pic"
               height="200px"
-              class="mx-auto d-block"
+              class="mx-auto d-block mt-3"
             />
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-7">
           <div class="row">
             <div class="col-12">
               <div
-                class="mx-auto d-block float-md-start"
-                style="width: fit-content"
+                class="mx-auto d-block float-md-start pt-5"
+                style="width: fit-content; text-align: center"
               >
-                <div class="h001 display-1 mt-5">Brian Vu</div>
                 <div
-                  class="display-6 ms-1"
-                  style="font-family: var(--bs-font-sans-serif)"
+                  class="display-5 ms-1"
+                  style="font-family: var(--bs-font-sans-serif); font-size: 2em"
                 >
-                  Software Developer
+                  <b>software developer</b>. passionate about <br />
+                  creating innovative and dynamic application
                 </div>
-                <div class="ms-2 mt-2">
-                  <img src="styles/mail.png" alt="mail_icon" width="20px" />
-                  vubaonam0401@gmail.com <br />
-                  <div class="wrapper mt-4">
+                <div class="mt-2 mt-5" style="font-family: RobotoLight">
+                  You can connect with me at <br />
+                  <div class="wrapper">
                     <a target="parent" href="https://github.com/BriannVu">
                       <div class="icon github">
                         <span class="tooltip">Github</span>
@@ -239,15 +237,7 @@
     <div id="background2" class="mt-2 pt-4">
       <div class="container">
         <div class="row">
-          <div
-            class="col-12 h1 h001 bigFontSize"
-            style="
-              /* font-family: NotoSerifVithkuqiRegular; */
-              text-align: center;
-              font-size: 2em;
-              /* font-weight: 600; */
-            "
-          >
+          <div class="col-12" style="text-align: center; font-size: 2em">
             <img
               src="styles/heading.png"
               alt=""
@@ -255,8 +245,8 @@
               width="30px"
               class="mb-4"
             />
-            <div style="font-weight: 600">My Projects</div>
-            <div class="mt-4" style="font-size: 17px">
+            <div>My Projects</div>
+            <div class="mt-4 RobotoLight" style="font-size: 17px">
               Exploring my portfolio to uncover the progress and works in my
               software development endeavors.
             </div>
@@ -290,9 +280,11 @@
                 >
                   #React, HTML/CSS/JavaScript, Firebase
                 </div>
-                Discover a world of flavor at the online snack shop. Order your
-                favorite snacks with ease, and have them delivered straight to
-                your door for a convenient and delicious experience.<br />
+                <div style="font-family: RobotoLight">
+                  Discover a world of flavor at the online snack shop. Order the
+                  favorite snacks with ease, and have them delivered straight to
+                  door for a convenient and delicious experience.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -362,9 +354,12 @@
                 >
                   #Angular, Ionic, TypeScript, and Firebase
                 </div>
-                Learn about different cultures and festivals in Canada with 'Our
-                Cultures - The App'. Explore events from various religions,
-                bringing people together and celebrating diversity.<br />
+                <div style="font-family: RobotoLight">
+                  Learn about different cultures and festivals in Canada with
+                  'Our Cultures - The App'. Explore events from various
+                  religions, bringing people together and celebrating
+                  diversity.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -441,9 +436,11 @@
                 >
                   #JavaSpring, Thymeleaf, Junit, H2database, JDBC API
                 </div>
-                Energize internal communication with our user-friendly forum web
-                app. Facilitate company-wide discussions, enabling effortless
-                creation of threads, posts, and interactive news comments.<br />
+                <div style="font-family: RobotoLight">
+                  Energize internal communication with a user-friendly forum web
+                  app. Facilitate company-wide discussions, enabling effortless
+                  creation of threads, posts, and interactive news comments.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -524,9 +521,12 @@
                 >
                   #PHP, MySQL, HTML, CSS, and JavaScript
                 </div>
-                Easily oversee player details through our intuitive web
-                application. Streamline record management with a user-friendly
-                interface, search capabilities, and efficient data handling.<br />
+                <div style="font-family: RobotoLight">
+                  Easily oversee player details through a intuitive web
+                  application. Streamline record management with a user-friendly
+                  interface, search capabilities, and efficient data
+                  handling.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -596,9 +596,12 @@
                 >
                   #JavaScript, HTML/CSS
                 </div>
-                Enjoy a classic gaming experience with our engaging web-based
-                Tic Tac Toe game. Challenge friends or test your skills against
-                the computer in a fun and strategic battle for victory.<br />
+                <div style="font-family: RobotoLight">
+                  Enjoy a classic gaming experience with a engaging web-based
+                  Tic Tac Toe game. Challenge friends or test your skills
+                  against the computer in a fun and strategic battle for
+                  victory.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -669,9 +672,12 @@
                 >
                   #JavaScript, HTML/CSS
                 </div>
-                Experience the thrill of decision-making in our interactive
-                Rock, Paper, Scissors web game. Engage in a timeless contest of
-                choices, competing against the computer to claim victory.<br />
+                <div style="font-family: RobotoLight">
+                  Experience the thrill of decision-making in the interactive
+                  Rock, Paper, Scissors web game. Engage in a timeless contest
+                  of choices, competing against the computer to claim
+                  victory.<br />
+                </div>
                 <a
                   class="none-underlined"
                   data-bs-toggle="collapse"
@@ -715,110 +721,41 @@
         </div>
       </div>
     </div>
-    <!-- Portfolio end ------------>
-
-    <div>
-      <div
-        style="text-align: center; margin-top: 150px; margin-bottom: 30px"
-        data-aos="fade-down"
-      >
-        Scroll down to get more info about me
-      </div>
-      <div class="mouse_scroll">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div>
-          <span class="m_scroll_arrows unu"></span>
-          <span class="m_scroll_arrows doi"></span>
-          <span class="m_scroll_arrows trei"></span>
-        </div>
-      </div>
-    </div>
-
-    <div id="background1" style="background-color: #3c4aa7; color: white">
+    <div
+      style="background-color: #102c57; color: white; padding: 30px 0 30px 0"
+      class="mt-4"
+    >
       <div class="container">
         <div class="row">
-          <!-- <div
-            data-aos="fade-right"
-            class="col-12 h1 h001 bigFontSize"
-            id="aboutme_heading"
-          >
-            |About me
-          </div> -->
-          <br /><br />
-          <div class="col-12 col-md-6 pt-4 pb-4">
-            <div class="row">
-              <div class="col-1 col-md-3"></div>
-              <div class="col-10 col-md-7">
-                <img
-                  src="styles/profile_pic.JPG"
-                  width="100%"
-                  alt="profile_pic"
-                  style="
-                    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-                      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-                      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-                      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-                      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-                      100px 100px 80px rgba(0, 0, 0, 0.07);
-                    border-radius: 34px;
-                  "
-                />
-              </div>
-              <div class="col-1 col-md-2"></div>
+          <div class="col-12">
+            <div class="ps-5 pe-5">
+              <img src="styles/quote.png" alt="" width="20px" />
+              <p style="font-family: RobotoLight">
+                With a strong background in
+                <span class="Roboto">Computer Systems Technology</span>
+                and a final GPA of
+                <span class="Roboto">3.85/4</span>, I bring dedication and
+                enthusiasm to every coding project. My journey has encompassed
+                complex programming languages and system, enabling me to elevate
+                productivity and efficiency across previous roles.
+              </p>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="h001 h5">
-              <div class="mb-3">
-                <div
-                  style="
-                    -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: white;
-                    font-family: monospace;
-                    font-weight: bolder;
-                  "
-                  id="greeting1"
-                >
-                  Hi, I'm Brian.
-                </div>
-                <br />
-                <div
-                  id="greeting2"
-                  style="font-family: monospace; font-weight: bolder"
-                >
-                  I'm a skilled software developer passionate about creating
-                  innovative and dynamic application 🚀
-                </div>
-              </div>
-            </div>
-            <div class="fadeFontColor">
+            <!-- <div class="p-4" style="font-family: RobotoLight; border: 1px solid white; width: 50%; margin: auto; border-radius: 10px;">
               <p>
-                With a strong background in system analysis and a final GPA of
-                3.85/4, I bring dedication and enthusiasm to every coding
+                With a strong background in <b>Computer System Technology</b> and a final GPA of
+                <b>3.85/4</b>, I bring dedication and enthusiasm to every coding
                 project. I've tackled complex programming languages and
                 leveraged my experience to improve productivity and efficiency
                 in previous roles.
-              </p>
-            </div>
-            <!-- <div class="mt-2">
-              <p>
-                If you want to see my experience or explore my portfolio of
-                projects, feel free to reach out. I'm here to answer any
-                questions and share more about my skills and expertise.
               </p>
             </div> -->
           </div>
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="container">
+    <!-- Portfolio end ------------>
+
+    <!-- <div class="container">
       <div class="row mx-2">
         <div class="col-12">
           <div
@@ -858,41 +795,40 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <div
+      id="certificate_skills_heading"
+      style="height: 10px; margin-top: 140px"
+    ></div>
     <div class="container">
-      
-      <div
-        class="row"
-        style="
-          border: 1px solid #e6ecf8;
-          box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-          border-radius: 12px;
-          margin: 2%;
-          margin-top: 7%;
-        "
-      >
-        <div class="col-12 pb-5" style="padding: 5%" id="certificate-col">
-          <div
-            class="col-12 h1 h001 bigFontSize"
-            id="certificate_skills_heading"
-            style="font-weight: bolder"
-          >
-            📚 Certificates
-          </div>
+      <div class="row">
+        <div
+          class="col-12 pb-5"
+          style="padding: 5%; text-align: center"
+          id="certificate-col"
+        >
+          <img src="styles/certificate.png" alt="" width="30px" class="mb-4" />
+          <div class="col-12 bigFontSize">My Certificates</div>
           <br />
 
-          <div class="row">
+          <div class="row" id="certificate_container">
             <div class="col-12 col-md-6 p-4">
               <img src="styles/certificates/React.jpg" alt="..." width="100%" />
             </div>
-            <div class="col-12 col-md-6 pt-5">
-              <h5 class="h4 fw-bold">
+            <div class="col-12 col-md-6 pt-md-5 pb-5">
+              <h5 class="h4">
                 React - The Complete Guide <br />(incl. React Router & Redux)
               </h5>
-              <p>
-                 Dive in and learn React.js from scratch! Learn React, Hooks,
+              <p class="RobotoLight">
+                Dive in and learn React.js from scratch! Learn React, Hooks,
                 Redux, React Router, Next.js, Best Practices and way more!
               </p>
+              <a
+                class="btn btn-sm btn-outline-dark"
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-7064f2ac-7eaf-4919-bfc9-fe897bf7f0aa/"
+                >show credential</a
+              >
               <!-- <a
                 href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
                 target="_blank"
@@ -901,6 +837,8 @@
               > -->
             </div>
 
+            <hr />
+
             <div class="col-12 col-md-6 p-4">
               <img
                 src="styles/certificates/docker.jpg"
@@ -908,25 +846,22 @@
                 width="100%"
               />
             </div>
-            <div class="col-12 col-md-6 pt-5">
-              <h5 class="h4 fw-bold">
-                Docker and Kubernetes: The Complete Guide
-              </h5>
-              <p>
+            <div class="col-12 col-md-6 pt-md-5 pb-5">
+              <h5 class="h4">Docker and Kubernetes: The Complete Guide</h5>
+              <p class="RobotoLight">
                 Build, test, and deploy Docker applications with Kubernetes
-                while learning production-style development workflows<br>
-                <!-- <div style="font-size: 0.9em;">
-
-                  • Learn Docker from scratch, no previous experience required <br>
-                  • Master the Docker CLI to inspect and debug running containers <br>
-                  • Build a CI + CD pipeline from scratch with Github, Travis CI, and AWS <br>
-                  • Understand the purpose and theory of Kubernetes by building a complex app <br>
-                  • Automatically deploy your code when it is pushed to Github!
-                </div> -->
+                while learning production-style development workflows<br />
               </p>
-              
+              <a
+                class="btn btn-sm btn-outline-dark"
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-65a84f8f-1b57-4abf-9468-8eb7e33ce067/"
+                >show credential</a
+              >
             </div>
-            
+
+            <hr />
+
             <div class="col-12 col-md-6 p-4">
               <img
                 src="styles/certificates/CourseraBootstrap4.PNG"
@@ -934,153 +869,264 @@
                 width="100%"
               />
             </div>
-            <div class="col-12 col-md-6 pt-5">
-              <h5 class="h4 fw-bold">
+            <div class="col-12 col-md-6 pt-md-5 pb-5">
+              <h5 class="h4">
                 Front-End Web UI Frameworks and Tools: Bootstrap 4
               </h5>
-              <p>
-                This course presents an overview of client-side web UI frameworks, particularly focusing on Bootstrap 4. Learn grids, responsive design, Bootstrap CSS, JavaScript components, CSS preprocessors (Less and Sass), as well as basics of Node.js, NPM, and task runners (Grunt and Gulp).
+              <p class="RobotoLight">
+                Learn grids, responsive design, Bootstrap CSS, JavaScript
+                components, CSS preprocessors (Less and Sass), as well as basics
+                of Node.js, NPM, and task runners (Grunt and Gulp).
               </p>
-            
+              <a
+                class="btn btn-sm btn-outline-dark"
+                target="_blank"
+                href="https://www.coursera.org/account/accomplishments/certificate/G493C763WJMD"
+                >show credential</a
+              >
             </div>
-
-            
-
-            
           </div>
-        </div>
-        <div class="col-12 col-md-6" style="padding: 5%">
-          <div class="h1 h001 bigFontSize" style="font-weight: bolder">
-            🎯 Skills
-          </div>
-          <div>
-            <br />
-            <p>
-              <span style="color: #3f54f7; font-weight: 600"
-                >Programming languages:</span
-              ><br />
-              <span style="font-weight: 500">
-                Java, HTML, CSS, JavaScript, TypeScript, PHP, C, C#, Kotlin,
-                SQL, Ruby.
-              </span>
-            </p>
-            <br />
-            <p>
-              <span style="color: #3f54f7; font-weight: 600"
-                >Frameworks and tools:</span
-              ><br />
-              <span style="font-weight: 500">
-                Spring Boot, Angular, React, jQuery, Node.js, Ionic, .Net,
-                Android Studio, Eclipse, MongoDB, MySQL, MS SQL, Oracle SQL,
-                Linux, Git/GitHub, AWS, Hadoop.
-              </span>
-            </p>
-            <!-- <span class="h001">Programming languages</span><br /><br />
-                     <div class="mb-2" id="skills_body">
-                       <div class="row">
-                         <i class="devicon-java-plain-wordmark colored skills col-2"></i>
-                         <i
-                           class="devicon-html5-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i class="devicon-css3-plain-wordmark colored skills col-2"></i>
-                         <i class="devicon-javascript-plain colored skills col-2"></i>
-                         <i class="devicon-typescript-plain colored skills col-2"></i>
-                         <i class="devicon-php-plain colored skills col-2"></i>
-                         <i class="devicon-c-plain-wordmark colored skills col-2"></i>
-                         <i class="devicon-csharp-plain colored skills col-2"></i>
-                         <i
-                           class="devicon-kotlin-plain-wordmark colored skills col-2"
-                         ></i>
-                         <br /><br />
-                       </div>
-                       <div>
-                         <span class="h001">Frameworks and tools</span><br /><br />
-                         <i
-                           class="devicon-spring-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-angularjs-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-react-original-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-jquery-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-nodejs-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-ionic-original-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-dot-net-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-androidstudio-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-mongodb-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-mysql-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-microsoftsqlserver-plain-wordmark colored skills col-2"
-                         ></i>
-                         <i class="devicon-linux-plain colored skills col-2"></i>
-                         <i class="devicon-git-plain-wordmark colored skills col-2"></i>
-                         <i
-                           class="devicon-github-original-wordmark colored skills col-2"
-                         ></i>
-                         <i
-                           class="devicon-amazonwebservices-plain-wordmark colored skills col-2"
-                         ></i>
-                       </div>
-                     </div> -->
-          </div>
-          <br />
         </div>
       </div>
+    </div>
+    <br />
+
+    <div
+      class="container mb-5"
+      style="text-align: center; font-size: 2em; margin-top: 30px"
+    >
+      <img src="styles/layer.png" alt="" srcset="" width="35px" class="mb-4" />
+      <div>Skills</div>
+      <div class="mt-4 RobotoLight" style="font-size: 17px">
+        A Brief Overview of
+        <span class="Roboto">Programming Languages</span> and
+        <span class="Roboto">Frameworks</span> I have experience with
+      </div>
+    </div>
+    <!-- Scroll Track starts -->
+    <div class="mx-auto px-4 sm:px-12 py-8" style="background-color: #fafafa">
+      <div class="slider">
+        <div class="slide-track" style="font-size: 80px">
+          <div class="slide">
+            <i class="devicon-java-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-html5-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-css3-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-javascript-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-typescript-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-php-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-c-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-csharp-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-kotlin-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-java-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-html5-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-css3-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-javascript-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-typescript-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-php-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-c-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-csharp-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-kotlin-plain-wordmark colored skills col-2"></i>
+          </div>
+        </div>
+      </div>
+
       <br />
-      <div class="row mt-5">
-        <div class="col-12 col-md-7 mt-2">
+
+      <div class="slider">
+        <div class="slide-track2" style="font-size: 80px">
+          <div class="slide">
+            <i class="devicon-spring-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-angularjs-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-react-original-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-jquery-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-nodejs-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-ionic-original-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-dot-net-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-androidstudio-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-mongodb-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-mysql-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-microsoftsqlserver-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-linux-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-git-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-github-original-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-amazonwebservices-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-spring-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-angularjs-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-react-original-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-jquery-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-nodejs-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-ionic-original-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-dot-net-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-androidstudio-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-mongodb-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-mysql-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-microsoftsqlserver-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-linux-plain colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i class="devicon-git-plain-wordmark colored skills col-2"></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-github-original-wordmark colored skills col-2"
+            ></i>
+          </div>
+          <div class="slide">
+            <i
+              class="devicon-amazonwebservices-plain-wordmark colored skills col-2"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Track ends -->
+
+    <div id="background_heading" style="height: 70px; margin-top: 140px"></div>
+    <div class="container pb-2">
+      <div class="row">
+        <div class="col-12 col-md-3"></div>
+        <div class="col-12 col-md-6">
           <div
-            class="h1 h001 bigFontSize mb-4"
-            id="experience_heading"
-            style="font-weight: bolder"
+            style="text-align: center; font-size: 2em;"
           >
-            My Experience
-            <img
-              src="styles/star.png"
+            <div><img
+              src="styles/profile.png"
               alt=""
-              height="50px"
-              style="margin: auto"
-            />
+              srcset=""
+              width="35px"
+              class="mb-2 me-1"
+            /> Background</div>
+            <div class="mt-4 RobotoLight" style="font-size: 17px">
+              A Comprehensive Look into My Education and Professional Experience
+            </div>
           </div>
           <div>
             <!-- Section: Timeline -->
             <section class="py-4">
               <ul class="timeline">
                 <li class="timeline-item mb-5" data-aos="fade-up">
-                  <a
-                    href="https://www.sheridancollege.ca/programs/computer-systems-technology-information-systems-engineering"
-                    target="parent"
-                  >
-                    <img
-                      src="styles/SheridanCollegeLogo.png"
-                      alt="SheridanCollegeLogo"
-                      width="200px"
-                      class="mb-4"
-                    />
-                  </a>
-                  <h5 class="fw-bold">Computer Systems Technology Student</h5>
-                  <p class="mb-2 fw-bold">
-                    Sheridan College <br />
-                    <img src="styles/calendar.png" width="20px" alt="" /> 2020 -
-                    2022
-                  </p>
-                  <p class="text-muted">
+                  <div>
+                    <a
+                      href="https://www.sheridancollege.ca/programs/computer-systems-technology-information-systems-engineering"
+                      target="parent"
+                    >
+                      <img
+                        src="styles/SheridanCollegeLogo.png"
+                        alt="SheridanCollegeLogo"
+                        width="200px"
+                        class="mb-4"
+                      />
+                    </a>
+                    <h5 class="">Computer Systems Technology Student</h5>
+                    <p class="mb-2">
+                      Sheridan College <br />
+                      <img src="styles/calendar.png" width="20px" alt="" /> 2020
+                      - 2022
+                    </p>
+                  </div>
+                  <p class="RobotoLight">
                     • Honor Advanced Diploma - GPA 3.85 <br />
                     • Completed Java OOP, web development, mobile app
                     development, and agile software development coursework.
@@ -1099,14 +1145,14 @@
                       class="mb-4"
                     />
                   </a>
-                  <h5 class="fw-bold">Web Developer</h5>
-                  <p class="mb-2 fw-bold">
+                  <h5 class="">Web Developer</h5>
+                  <p class="mb-2">
                     iContribute <br />
                     📍 Toronto &nbsp;
                     <img src="styles/calendar.png" width="20px" alt="" /> 2021 -
                     2022
                   </p>
-                  <p class="text-muted">
+                  <p class="RobotoLight">
                     • Utilized React.js and MongoDB/Node.js to build a dynamic
                     web app with a seamless user experience. <br />
                     • Addressed 30+ bugs, improving security and stability, and
@@ -1126,13 +1172,13 @@
                       class="mb-4"
                     />
                   </a>
-                  <h5 class="fw-bold">Junior Software Developer</h5>
-                  <p class="mb-2 fw-bold">
+                  <h5 class="">Junior Software Developer</h5>
+                  <p class="mb-2">
                     The Urban Writers <br />
                     📍 Toronto &nbsp;
                     <img src="styles/calendar.png" width="20px" alt="" /> 2022
                   </p>
-                  <p class="text-muted">
+                  <p class="RobotoLight">
                     • Resolved 40+ bug fixes and implemented new features in
                     Ruby on Rails, enhancing user experience.<br />
                     • Collaborated with cross-functional team to deliver
@@ -1153,8 +1199,12 @@
     <br /><br /><br /><br /><br /><br />
 
     <hr />
-    <div class="mt-4 mb-4" style="margin-left: 10%; margin-right: 10%">
-      <div style="float: left">© 2023 Brian Vu</div>
+    <div class="mt-4 mb-5" style="margin-left: 10%; margin-right: 10%">
+      <div style="float: left">
+        © 2023 Brian Vu <br /><span style="font-family: RobotoLight"
+          >vubaonam0401@gmail.com</span
+        >
+      </div>
       <div style="float: right">
         <a
           class="black-color me-2 none-underlined"
