@@ -29,8 +29,12 @@
   padding: 3%;
 }
 
-#certificate_container{
+#certificate_container {
   padding: 40px 10% 0 10%;
+}
+
+#heading {
+  font-size: 2em;
 }
 
 @media (max-width: 767.98px) {
@@ -56,8 +60,11 @@
   .projectBoxContainer {
     padding: 10% 0% 0% 0%;
   }
-  #certificate_container{
+  #certificate_container {
     padding: 0 0 0 0;
+  }
+  #heading {
+    font-size: 1.3em;
   }
 }
 
@@ -388,7 +395,7 @@
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(calc(-80px * 10));
+      transform: translateX(calc(-80px * 9));
     }
   }
 
@@ -397,7 +404,7 @@
       transform: translateX(0px);
     }
     100% {
-      transform: translateX(calc(-80px * 5));
+      transform: translateX(calc(-80px * 15));
     }
   }
 }
