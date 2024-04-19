@@ -1,3 +1,10 @@
+.nav-item {
+  color: black !important;
+}
+.nav-item:hover{
+  color: rgb(116, 116, 116) !important;
+}
+
 /* ICON --------------------------------------------------------------------------------------- */
 /*
     Auther: Abdelrhman Said
@@ -78,7 +85,7 @@
   }
 }
 
-.carousel-indicators{
+.carousel-indicators {
   bottom: -37px;
 }
 
@@ -251,8 +258,8 @@
 .speech-bubble {
   font-family: RobotoLight;
   width: 170px;
-  padding: 13px 5px 13px 5px;
-  background: #3d3f3f;
+  padding: 6px 5px 6px 5px;
+  background: #585858;
   color: #fff;
   position: relative;
   text-align: center;
@@ -265,7 +272,7 @@
 }
 .speech-bubble:after {
   border: 16px solid transparent;
-  border-top-color: #3d3f3f;
+  border-top-color: #585858;
   content: "";
   margin-left: -10px;
   position: absolute;
