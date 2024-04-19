@@ -259,7 +259,7 @@
   font-family: RobotoLight;
   width: 170px;
   padding: 6px 5px 6px 5px;
-  background: #585858;
+  background: #3d3f3f;
   color: #fff;
   position: relative;
   text-align: center;
@@ -272,7 +272,7 @@
 }
 .speech-bubble:after {
   border: 16px solid transparent;
-  border-top-color: #585858;
+  border-top-color: #3d3f3f;
   content: "";
   margin-left: -10px;
   position: absolute;
